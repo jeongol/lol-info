@@ -29,6 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <h1>프로제트 생성</h1>
+        <h1>브랜치 생성</h1>
         {children}
       </body>
     </html>
