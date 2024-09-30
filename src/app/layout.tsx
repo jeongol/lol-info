@@ -28,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <h1>프로제트 생성</h1>
         {children}
       </body>
     </html>
