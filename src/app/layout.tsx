@@ -10,6 +10,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -26,13 +27,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // ssg랜더링 방식 사용하기
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav className="bg-cyan-700 flex items-center justify-between h-[90px]">
-          <div>이미지 영역 추후 추가 예정</div>
+          <div>로고</div>
           <ul className="text-3xl">
             <Link href="/">메인</Link>
           </ul>
