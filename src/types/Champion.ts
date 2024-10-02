@@ -1,4 +1,4 @@
-// 챔피언 기본값 정의
+// 챔피언 기본값 type 정의
 export type champion = {
   id: string;
   name: string;
@@ -9,7 +9,7 @@ export type champion = {
   key: string;
 };
 
-// 챔피언 이미지 정의
+// 챔피언 이미지 type 정의
 export type ChampionImage = {
   full: string;
   sprite: string;

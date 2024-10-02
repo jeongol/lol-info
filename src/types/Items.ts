@@ -1,13 +1,13 @@
-// 아이템 정보 정의
+// 아이템 정보 type 정의
 export type Item = {
-  id: string; // 아이템의 고유 ID
-  name: string; // 아이템 이름
-  plaintext: string; // 간단한 설명
+  id: string;
+  name: string;
+  plaintext: string;
 
-  image: ItemImage; // 아이템 이미지 정보
+  image: ItemImage;
 };
 
-// 아이템 이미지 정의
+// 아이템 이미지 type 정의
 export type ItemImage = {
   full: string;
   sprite: string;
