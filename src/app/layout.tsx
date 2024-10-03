@@ -33,11 +33,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="bg-cyan-700 flex items-center justify-between h-[90px]">
-          <div>로고</div>
-          <ul className="text-3xl">
-            <Link href="/">메인</Link>
-          </ul>
+        <nav className="bg-cyan-700 flex items-center justify-between h-[90px] px-14">
+          <div className="text-3xl">
+            <Link href="/">이미지 테크 로고</Link>
+          </div>
           <ul className="text-3xl">
             <Link href="/champions">챔피언 목록</Link>
           </ul>

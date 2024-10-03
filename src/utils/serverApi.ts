@@ -17,7 +17,7 @@ export const requestChampion = async () => {
     `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/champion.json`,
     {
       next: {
-        revalidate: 4000,
+        revalidate: 86400,
       },
     }
   );
