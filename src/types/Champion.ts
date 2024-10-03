@@ -1,5 +1,5 @@
 // 챔피언 기본값 type 정의
-export type champion = {
+export interface champion {
   id: string;
   name: string;
   title: string;
@@ -7,10 +7,10 @@ export type champion = {
   biurb: string;
 
   key: string;
-};
+}
 
 // 챔피언 이미지 type 정의
-export type ChampionImage = {
+export interface ChampionImage {
   full: string;
   sprite: string;
   group: string;
@@ -18,4 +18,4 @@ export type ChampionImage = {
   y: number;
   w: number;
   h: number;
-};
+}
