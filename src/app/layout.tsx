@@ -35,16 +35,16 @@ export default function RootLayout({
       >
         <nav className="bg-cyan-700 flex items-center justify-between h-[90px] px-14">
           <div className="text-3xl">
-            <Link href="/">이미지 테크 로고</Link>
+            <Link href="/">이미지 메인 로고</Link>
           </div>
+          <ul className="text-3xl">
+            <Link href="/rotation">금주 무료 챔피언 목록</Link>
+          </ul>
           <ul className="text-3xl">
             <Link href="/champions">챔피언 목록</Link>
           </ul>
           <ul className="text-3xl">
             <Link href="/items">아이템 목록</Link>
-          </ul>
-          <ul className="text-3xl">
-            <Link href="/rotation">챔피언 로테이션 정보</Link>
           </ul>
         </nav>
         {children}

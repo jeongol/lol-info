@@ -1,13 +1,5 @@
-"ues server";
+// import React from "react";
 
-import React from "react";
-
-const rotation = () => {
-  return (
-    <>
-      <div>챔피언 로테이션 정보 칸 입니다.</div>
-    </>
-  );
-};
-
-export default rotation;
+// const ChampionRotation: React.FC = () => {
+//   const [champions, setChampions] = useState<Champion[]>([]);
+//   const [loading, setLoading] = useState<boolean>(false);

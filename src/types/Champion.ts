@@ -19,3 +19,15 @@ export interface ChampionImage {
   w: number;
   h: number;
 }
+
+export interface championList {
+  data: {
+    id: string;
+    name: string;
+    title: string;
+    image: ChampionImage;
+    biurb: string;
+
+    key: string;
+  };
+}

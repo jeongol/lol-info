@@ -1,14 +1,14 @@
 // 아이템 정보 type 정의
 export interface Item {
-  id: string;
   name: string;
   plaintext: string;
+  image: itemImage;
 
-  image: ItemImage;
+  key: string;
 }
 
 // 아이템 이미지 type 정의
-export interface ItemImage {
+export interface itemImage {
   full: string;
   sprite: string;
   group: string;
