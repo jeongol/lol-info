@@ -1,5 +1,9 @@
 // 챔피언 디테일 페이지
 
+export interface championrawdata {
+  data: { [key: string]: championDetails };
+}
+
 export interface championDetails {
   version: string;
   id: string;

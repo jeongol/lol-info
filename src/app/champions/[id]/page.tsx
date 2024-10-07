@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 import { requestChampionDetail } from "@/utils/serverApi";
-import { championDetails } from "@/types/ChampionDetail";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
 export async function generateMetadata({
@@ -18,7 +17,7 @@ export async function generateMetadata({
 }
 
 export default async function ChampionPage({ params }: { params: Params }) {
-  const champion: championDetails = await requestChampionDetail(params.id);
+  const champion = await requestChampionDetail(params.id);
   return (
     <div>
       <h1>{champion.name}</h1>

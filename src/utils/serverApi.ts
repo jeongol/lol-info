@@ -1,6 +1,7 @@
 "use server";
 
 import { champion } from "@/types/Champion";
+import { championrawdata } from "@/types/ChampionDetail";
 import { item } from "@/types/Items";
 
 // 버전 불러오기
@@ -35,7 +36,7 @@ export const requestChampionDetail = async (id: string) => {
   const response = await fetch(
     `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/champion/${id}.json`
   );
-  const championDetailData = await response.json();
+  const championDetailData: championrawdata = await response.json();
   return championDetailData.data[id];
 };
 
