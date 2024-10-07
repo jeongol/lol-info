@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { championRotation } from "@/types/championRotation";
-import { champion } from "@/types/champion";
+// import { championRotation } from "@/types/championRotation";
+// import { champion } from "@/types/champion";
 import { requestChampion } from "@/utils/serverApi";
+import { championRotation } from "@/types/ChampionRotation";
+import { champion } from "@/types/Champion";
 
 export default function ChampionRotation() {
   const [rotationChampions, setRotationChampions] = useState<champion[]>([]);
