@@ -28,7 +28,6 @@ export default async function ChampionsPage() {
               />
               <h2>{champion.name}</h2>
               <h3>{champion.title}</h3>
-              <p>{champion.biurb}</p>
             </Link>
           </div>
         ))}

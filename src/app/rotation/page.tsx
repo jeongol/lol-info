@@ -18,7 +18,6 @@ export default function ChampionRotation() {
       const filteredChampions = Object.values(champions).filter((champion) => {
         return data.result.freeChampionIds.includes(Number(champion.key));
       });
-      console.log(filteredChampions);
       setRotationChampions(filteredChampions);
     };
 
