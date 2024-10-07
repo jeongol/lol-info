@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { requestChampionDetail } from "../../../utils/serverApi";
-import { championDetails } from "../../../types/championDetail";
+import { requestChampionDetail } from "@/utils/serverApi";
+import { championDetails } from "@/types/championDetail";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
 export async function generateMetadata({
