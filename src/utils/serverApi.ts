@@ -50,24 +50,3 @@ export const requestItems = async () => {
   return items;
 };
 
-// 필터 처리를 통해 로테이션 챔피언으로 만들기
-// export const requestRotation = async () => {
-//   const rotationResponse = await fetch("/api/rotation");
-//   const rotationData = await rotationResponse.json();
-//   const freeChampionIds = rotationData.freeChampionIds;
-//   console.log(freeChampionIds);
-//   const champions = await requestChampion();
-//   console.log("11111111111");
-
-//   const rotationChampions = Object.values(champions).filter((champion) => {
-//     return freeChampionIds.includes(Number(champion.key));
-//   });
-
-//   console.log(rotationChampions);
-//   return rotationChampions;
-// };
-
-// todo
-
-// 에러처리
-//

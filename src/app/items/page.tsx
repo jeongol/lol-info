@@ -14,7 +14,6 @@ export default async function itemspages() {
       <ul>
         {items.map((item) => (
           <li key={item.name}>
-            {/* 트러블슈팅 이미지 커밋 12번째 코드확인 (빨간색 오류) */}
             <Image
               src={`https://ddragon.leagueoflegends.com/cdn/14.19.1/img/item/${item.image.full}`}
               alt="이미지 없음"

@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-// api 함수 가져오기
 import { requestChampionDetail } from "../../../utils/serverApi";
 import { championDetails } from "../../../types/championDetail";
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";

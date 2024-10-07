@@ -53,9 +53,3 @@ interface championStats {
   attackspeedperlevel: number;
   attackspeed: number;
 }
-
-// type Params = {
-//   params: {
-//     id: string;
-//   };
-// };
