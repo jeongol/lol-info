@@ -1,12 +1,15 @@
+import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -23,12 +26,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // ssg랜더링 방식 사용하기
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <h1>프로제트 생성</h1>
+        <nav className="bg-cyan-700 flex items-center justify-between h-[90px] px-52">
+          <div className="text-3xl">
+            <Link href="/">홈</Link>
+          </div>
+          <ul className="text-3xl">
+            <Link href="/rotation">금주 무료 챔피언</Link>
+          </ul>
+          <ul className="text-3xl">
+            <Link href="/champions">챔피언 정보</Link>
+          </ul>
+          <ul className="text-3xl">
+            <Link href="/items">아이템 정보</Link>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
