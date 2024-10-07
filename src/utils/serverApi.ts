@@ -1,6 +1,6 @@
 "use server";
 
-import { champion } from "@/types/champion";
+import { champion } from "@/types/Champion";
 import { item } from "@/types/Items";
 
 // 버전 불러오기
@@ -49,4 +49,3 @@ export const requestItems = async () => {
   const items: item[] = Object.values(itemsData.data);
   return items;
 };
-
