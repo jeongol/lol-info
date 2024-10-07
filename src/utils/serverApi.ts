@@ -1,11 +1,9 @@
-// 오픈
-
 "use server";
 
-import { champion } from "@/types/Champion";
-import { Item } from "@/types/Items";
+import { champion } from "@/types/champion";
+import { item } from "@/types/Items";
 
-// version 불러오기
+// 버전 불러오기
 export const requestVersion = async () => {
   const res = await fetch(
     "https://ddragon.leagueoflegends.com/api/versions.json"
@@ -18,7 +16,7 @@ export const requestVersion = async () => {
 // 챔피언 목록 불러오기 (Isr) (버전 적용)
 export const requestChampion = async () => {
   const version = await requestVersion();
-  const res = await fetch(
+  const response = await fetch(
     `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/champion.json`,
     {
       next: {
@@ -26,37 +24,50 @@ export const requestChampion = async () => {
       },
     }
   );
-  const championData = await res.json();
+  const championData = await response.json();
   const champion: champion[] = Object.values(championData.data);
   return champion;
 };
 
-// 아이템 상세정보 불러오기 (버전 적용)
-export const requestItems = async () => {
-  const version = await requestVersion();
-  const res = await fetch(
-    `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/item.json`
-  );
-  const itemsData = await res.json();
-  const items: Item[] = Object.values(itemsData.data);
-  return items;
-};
-
-// 키값 / 이미지 url 주소 확인
-
 // 챔피언 상세정보 불러오기 (버전 적용)
 export const requestChampionDetail = async (id: string) => {
   const version = await requestVersion();
-  const res = await fetch(
+  const response = await fetch(
     `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/champion/${id}.json`
   );
-  const championDetailData = await res.json();
+  const championDetailData = await response.json();
   return championDetailData.data[id];
 };
 
-//
+// 아이템 목록 불러오기 (버전 적용)
+export const requestItems = async () => {
+  const version = await requestVersion();
+  const response = await fetch(
+    `https://ddragon.leagueoflegends.com/cdn/${version}/data/ko_KR/item.json`
+  );
+  const itemsData = await response.json();
+  const items: item[] = Object.values(itemsData.data);
+  return items;
+};
 
-// 아이템 변환 코드 참고용
-// // const filteredItems = items
-// ?.filter((item) => item.maps["11"] && item.gold.purchasable)
-// .sort((a, b) => a.gold.total - b.gold.total);
+// 필터 처리를 통해 로테이션 챔피언으로 만들기
+// export const requestRotation = async () => {
+//   const rotationResponse = await fetch("/api/rotation");
+//   const rotationData = await rotationResponse.json();
+//   const freeChampionIds = rotationData.freeChampionIds;
+//   console.log(freeChampionIds);
+//   const champions = await requestChampion();
+//   console.log("11111111111");
+
+//   const rotationChampions = Object.values(champions).filter((champion) => {
+//     return freeChampionIds.includes(Number(champion.key));
+//   });
+
+//   console.log(rotationChampions);
+//   return rotationChampions;
+// };
+
+// todo
+
+// 에러처리
+//

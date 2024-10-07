@@ -1,3 +1,5 @@
+// 챔피언 디테일 페이지
+
 export interface championDetails {
   version: string;
   id: string;
@@ -5,13 +7,14 @@ export interface championDetails {
   name: string;
   title: string;
   blurb: string;
-  image: ChampionImage;
+  image: championImage;
   tags: string[];
   partype: string;
-  stats: ChampionStats;
+  stats: championStats;
+  info: championInfo;
 }
 
-interface ChampionImage {
+interface championImage {
   full: string;
   sprite: string;
   group: string;
@@ -21,7 +24,14 @@ interface ChampionImage {
   h: number;
 }
 
-interface ChampionStats {
+interface championInfo {
+  attack: number;
+  defense: number;
+  magic: number;
+  difficulty: number;
+}
+
+interface championStats {
   hp: number;
   hpperlevel: number;
   mp: number;
@@ -44,8 +54,8 @@ interface ChampionStats {
   attackspeed: number;
 }
 
-type Params = {
-  params: {
-    id: string;
-  };
-};
+// type Params = {
+//   params: {
+//     id: string;
+//   };
+// };

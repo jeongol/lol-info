@@ -1,5 +1,7 @@
+// 아이템 페이지
+
 // 아이템 정보 type 정의
-export interface Item {
+export interface item {
   name: string;
   plaintext: string;
   image: itemImage;

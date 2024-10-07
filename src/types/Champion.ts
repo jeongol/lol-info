@@ -1,16 +1,18 @@
+// 챔피언 페이지
+
 // 챔피언 기본값 type 정의
 export interface champion {
   id: string;
   name: string;
   title: string;
-  image: ChampionImage;
+  image: championImage;
   biurb: string;
 
   key: string;
 }
 
 // 챔피언 이미지 type 정의
-export interface ChampionImage {
+export interface championImage {
   full: string;
   sprite: string;
   group: string;
@@ -25,7 +27,7 @@ export interface championList {
     id: string;
     name: string;
     title: string;
-    image: ChampionImage;
+    image: championImage;
     biurb: string;
 
     key: string;
