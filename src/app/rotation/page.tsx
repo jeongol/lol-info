@@ -12,7 +12,7 @@ export default function ChampionRotation() {
 
   useEffect(() => {
     const fetchChampionRotation = async () => {
-      const response = await fetch("http://localhost:3000/api/rotation");
+      const response = await fetch("/api/rotation");
       const data: championRotation = await response.json();
 
       const champions = await requestChampion();
