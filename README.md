@@ -4,7 +4,7 @@
 
 - 프로젝트 이름 : lol-info <br />
 - 프로젝트 간단 소개 : riot api를 활용한 League of Legend 게임의 인게임 정보를 제공하는 사이트 제작 <br />
-- 배포 사이트(vercel 배포를 이용) : lol-info-eight.vercel.app
+- 배포 사이트(vercel 배포를 이용) : [lol-info-eight.vercel.app](https://lol-info-eight.vercel.app/)
 
 ## 프로젝트 제작 기술
 
@@ -69,6 +69,6 @@ app component 구조
 
 ## 트러블슈팅 (개발 이슈)
 
-[lol-info 개인프로젝트 (트러블슈팅)](<[https://dev-note-two.vercel.app/](https://velog.io/@jgoncode/lol-info-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85)>) </br>
+[lol-info 개인프로젝트](https://velog.io/@jgoncode/lol-info-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85) (트러블슈팅) </br>
 
 (벨로그 링크)
