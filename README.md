@@ -69,4 +69,6 @@ app component 구조
 
 ## 트러블슈팅 (개발 이슈)
 
-벨로그 링크 - > [lol-info 개인프로젝트 (트러블슈팅)](<[https://dev-note-two.vercel.app/](https://velog.io/@jgoncode/lol-info-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85)>)</br>
+[lol-info 개인프로젝트 (트러블슈팅)](<[https://dev-note-two.vercel.app/](https://velog.io/@jgoncode/lol-info-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85)>) </br>
+
+(벨로그 링크)
