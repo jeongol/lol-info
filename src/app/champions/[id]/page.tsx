@@ -19,16 +19,23 @@ export async function generateMetadata({
 export default async function ChampionPage({ params }: { params: Params }) {
   const champion = await requestChampionDetail(params.id);
   return (
-    <div>
-      <h1>{champion.name}</h1>
-      <h2>{champion.title}</h2>
-      <Image
-        src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`}
-        alt="오류"
-        width={200}
-        height={300}
-      />
-      <p>{champion.blurb}</p>
+    <div className="p-8 flex flex-col items-center">
+      <h1 className="text-4xl font-bold text-center mb-6">{champion.name}</h1>
+      <h2 className="text-2xl font-semibold text-center mb-4">
+        {champion.title}
+      </h2>
+      <div className="flex justify-center mb-6">
+        <Image
+          src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`}
+          alt="오류"
+          width={1000}
+          height={1000}
+          className="rounded-lg shadow-lg"
+        />
+      </div>
+      <p className="text-lg text-gray-700 text-center max-w-[1000px] mb-4">
+        {champion.blurb}
+      </p>
     </div>
   );
 }

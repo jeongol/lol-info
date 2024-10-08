@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav className="bg-cyan-700 flex items-center justify-between h-[90px] px-52">
-          <div className="text-3xl">
+          <div className="text-2xl">
             <Link href="/">홈</Link>
           </div>
           <ul className="text-3xl">
