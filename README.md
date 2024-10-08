@@ -4,13 +4,14 @@
 
 - 프로젝트 이름 : lol-info <br />
 - 프로젝트 간단 소개 : riot api를 활용한 League of Legend 게임의 인게임 정보를 제공하는 사이트 제작 <br />
-- 배포 사이트(vercel 배포를 이용) : [lol-info-eight.vercel.app](https://lol-info-eight.vercel.app/)
+- 배포 사이트(vercel 이용) : [lol-info-eight.vercel.app](https://lol-info-eight.vercel.app/)
 
 ## 프로젝트 제작 기술
 
 - next.js 프레임워크 사용(react 기반 프레임 워크)
 - typescrpit 언어 사용
-- Tailwind css 사용
+- tailwind css 사용
+- vscode 편집기 사용
 
 ## 프로젝트 주요 기능
 
