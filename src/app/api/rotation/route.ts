@@ -19,3 +19,5 @@ export async function GET() {
 
   return NextResponse.json({ result });
 }
+
+// 리드미 css수정
